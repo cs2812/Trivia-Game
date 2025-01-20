@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es5",                        // Adjust based on your browser support
+    "lib": ["dom", "dom.iterable", "esnext"], // Include necessary libraries
+    "module": "esnext",                     // Use ESNext modules
+    "moduleResolution": "node",            
+    "strict": true,                         // Enable strict type checking
+    "esModuleInterop": true,                // Fixes default import issues
+    "allowSyntheticDefaultImports": true,   // Allow synthetic default imports
+    "skipLibCheck": true,                   // Skips type checking in node_modules
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./",
+    "paths": {
+      "*": ["src/*"]
+    },
+    "jsx": "react-jsx"                      // Required for React with TypeScript
+  },
+  "include": ["src"],                        // Include the source folder
+  "exclude": ["node_modules", "build"]       // Exclude unnecessary folders
+}
